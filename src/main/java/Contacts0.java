@@ -62,7 +62,7 @@ public class Contacts0 {
                             && !person1[2].isEmpty() && person1[2].contains("@") ? person1 : null;
                 }
                 if (decodeResult == null) {
-                    feedback = String.format("Invalid command format: %1$s " + (System.lineSeparator() + "|| ") 
+                    feedback = String.format("Invalid command format: %1$s " + (System.lineSeparator() + "|| ")
                             + "%2$s", "add", String.format("%1$s: %2$s", "add", "Adds a person to contacts.") + (System.lineSeparator() + "|| ")
                             + String.format("\tParameters: %1$s", "NAME "
                             + "p/" + "PHONE_NUMBER "
@@ -106,9 +106,9 @@ public class Contacts0 {
                         + String.format("\tExample: %1$s", "list") + (System.lineSeparator() + "|| ")) + (System.lineSeparator() + "|| ")
                         + (String.format("%1$s: %2$s", "clear", "Clears all contacts.") + (System.lineSeparator() + "|| ")
                         + String.format("\tExample: %1$s", "clear") + (System.lineSeparator() + "|| ")) + (System.lineSeparator() + "|| ")
-                        + (String.format("%1$s: %2$s", "exit", "Exits the program.")+ (System.lineSeparator() + "|| ")
+                        + (String.format("%1$s: %2$s", "exit", "Exits the program.") + (System.lineSeparator() + "|| ")
                         + String.format("\tExample: %1$s", "exit")) + (System.lineSeparator() + "|| ") + (System.lineSeparator() + "|| ")
-                        + (String.format("%1$s: %2$s", "help", "Shows program usage instructions.")+ (System.lineSeparator() + "|| ")
+                        + (String.format("%1$s: %2$s", "help", "Shows program usage instructions.") + (System.lineSeparator() + "|| ")
                         + String.format("\tExample: %1$s", "help"));
                 break;
             case "exit":
@@ -120,7 +120,7 @@ public class Contacts0 {
                 System.exit(0);
                 // Fallthrough
             default:
-                feedback = String.format("Invalid command format: %1$s " + (System.lineSeparator() + "|| ") 
+                feedback = String.format("Invalid command format: %1$s " + (System.lineSeparator() + "|| ")
                         + "%2$s", commandType, (String.format("%1$s: %2$s", "add", "Adds a person to contacts.") + (System.lineSeparator() + "|| ")
                         + String.format("\tParameters: %1$s", "NAME "
                         + "p/" + "PHONE_NUMBER "
